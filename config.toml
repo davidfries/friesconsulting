@@ -1,4 +1,4 @@
-baseURL = "https://friesconsulting.services"
+baseURL = ""
 languageCode = "en-us"
 title = "Fries Consulting Services, LLC."
 theme = "ananke"
