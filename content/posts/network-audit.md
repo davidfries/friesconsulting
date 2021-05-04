@@ -1,7 +1,7 @@
 ---
 title: "Network Audit"
 date: 2021-04-26T22:11:54-04:00
-draft: true
+draft: false
 ---
 
 We recently performed a full internal network audit for a client that from a physical point of view was in decent shape. It wasn’t until we started to dig into the logical networking that things became more incoherent. Their logical network choices caused issues that plagued them for over half a year before we were able to sort things out.
