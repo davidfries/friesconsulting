@@ -1,7 +1,7 @@
 ---
 title: "Automation"
 date: 2021-04-28T22:23:37-04:00
-draft: true
+draft: false
 ---
 Automation is more than turning lights on and off at certain times or controlling HVAC with outside temperature fluctuations. It is something that can save businesses many man hours, especially tasks that require human interaction. Every department in a business can benefit from some form of automation. 
 
