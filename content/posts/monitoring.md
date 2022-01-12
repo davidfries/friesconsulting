@@ -16,4 +16,4 @@ The one thing that causes pause to many organizations is “alert fatigue”. Th
 
 Some important metrics to watch are the average records in a database or even average network throughput in the 95th percentile. This will tell you if you potentially are starting to either have data issues or network issues before they become a downtime-causing problem. Latency and uptime monitoring of internal/external applications is also very important. If you were to start having quality issues with your ISP, would you be able to provide historical data to their support staff? 
 
-If this sounds like something that interests you, please feel free to reach out at the contact form to see how Fries Consulting can help with your infrastructure monitoring needs.
+If this sounds like something that interests you, please feel free to reach out at the [contact form](/contact/) to see how Fries Consulting can help with your infrastructure monitoring needs.
