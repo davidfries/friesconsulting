@@ -2,10 +2,7 @@
 title: "Streamlining Your AWS Account"
 date: 2024-12-05T13:28:08-07:00
 draft: false
-author: ["David Fries"]
-categories: ["AWS", "Infrastructure as Code", "Pulumi"]
-tags: ["AWS", "IaC", "Pulumi", "Cloud Management"]
-summary: "Learn how to simplify your AWS account management with Infrastructure as Code and Pulumi."
+
 ---
 
 # Streamlining Your AWS Account: How Infrastructure as Code Can Help
