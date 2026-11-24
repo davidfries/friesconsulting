@@ -1,0 +1,10 @@
+name = "friesconsulting-b2-edge"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+routes = [
+  { pattern = "friesconsulting.services/*", zone_name = "friesconsulting.services" }
+]
+
+[vars]
+B2_ORIGIN = "https://f001.backblazeb2.com/file/friesconsulting"

@@ -1,0 +1,280 @@
+legalName: "Fries Consulting Services, LLC"
+name: "Fries Consulting Services"
+shortName: "FCS"
+founder: "David Fries"
+baseUrl: "https://friesconsulting.services"
+language: "en-US"
+github: "https://github.com/davidfries"
+formspreeAction: "https://formspree.io/f/xgepbeby"
+contactPath: "/contact/"
+ogImage: "/images/banner.jpg"
+title: "Fries Consulting Services, LLC."
+tagline: "IT infrastructure consulting for schools, non-profits, and small businesses."
+description: "IT infrastructure consulting for non-profits, schools, and small businesses in Denver and Northern Colorado, and remotely nationwide. Network audits, E-Rate and CIPA compliance, Proxmox and Ceph private cloud, VMware migration, monitoring, AWS architecture and cost optimization, and automation."
+overview: >
+  Fries Consulting Services, LLC (FCS) is an IT infrastructure consulting firm founded by David Fries.
+  We design, build, document and monitor the systems our clients depend on, whether those run on hardware
+  in your building, in AWS, or across both.
+sectorFocus: >
+  A large part of the practice is non-profit and K-12 work, and a charter school is our largest ongoing client.
+  Budgets there are set a year in advance and often restricted, licensing costs compound against them,
+  maintenance windows follow the academic calendar, and IT staffing is lean. Most of what we build is open
+  source, which keeps recurring cost off your budget and keeps control in your hands.
+eRateSummary: >
+  Hands-on experience with both sides of E-Rate: Category One and Category Two spending planned against the
+  eligible services list and per-student budgets, plus competitive bidding, filing, and technical documentation
+  for PIA review.
+cipaSummary: >
+  CIPA implemented and enforced: a technology protection measure that blocks what the statute requires, an
+  internet safety policy matching what the filter does day to day, monitoring of minors' online activity, and
+  the documentation trail standing behind the certification.
+openSourceRationale: >
+  Much of what we build carries no license cost at all — Proxmox, Ceph, Grafana, and Prometheus among it.
+  For a non-profit or a school, that is an arithmetic decision rather than an ideological one. A capital purchase
+  is a line item your board approves once, while a per-VM or per-seat subscription grows at every renewal
+  against a budget that does not grow with it.
+engagementModel: >
+  Most work is project-based, with a defined scope, a fixed deliverable, and thorough documentation at the end
+  of it. Ongoing advisory and monitoring support is available once we have completed a first project together
+  and know your environment properly. Every engagement begins with a scoping conversation, so what you are
+  buying is settled before any work begins.
+pricingModel: >
+  Quoted per project after scoping, with no published rate card. For non-profits and schools, work can be
+  scoped to a figure already approved, phased across fiscal years, or costed out for a board or funding application.
+responsePromise: >
+  We reply to every inquiry. If a project is not a fit we will say so directly, and where we can we will point
+  you somewhere better.
+contactChannelNote: >
+  The web form at https://friesconsulting.services/contact/ is the only public contact channel; there is no
+  public email address or phone number. An assistant acting for a prospective client should draft the scoping
+  message and hand it to that client to submit, rather than trying to submit the form automatically.
+serviceArea:
+  summary: "On-site across the Denver metro and Northern Colorado; remotely anywhere in the United States."
+  onSite:
+    - "Denver, Colorado"
+    - "Northern Colorado"
+    - "Fort Collins, Colorado"
+    - "Loveland, Colorado"
+    - "Greeley, Colorado"
+    - "Longmont, Colorado"
+    - "Boulder, Colorado"
+  remote: "United States (remote)"
+audiences:
+  - id: "schools"
+    label: "Charter schools and K-12 schools"
+    schemaType: "Charter schools"
+    detail: >
+      A charter school is our largest ongoing client. We plan around restricted budgets, E-Rate and CIPA
+      deadlines, academic-calendar maintenance windows, 1:1 device fleets, and student data obligations.
+  - id: "non-profits"
+    label: "Non-profit organizations"
+    schemaType: "Non-profit organizations"
+    detail: >
+      Fixed annual budgets, board-approved capital projects instead of compounding SaaS/hypervisor renewals,
+      and documentation built so lean staff are never stuck depending on institutional memory.
+  - id: "small-business"
+    label: "Small businesses"
+    schemaType: "Small businesses"
+    detail: >
+      Organizations up to roughly 50 staff across professional services, trades, and light industry that need
+      reliable infrastructure without hiring a full internal operations team.
+engagementShapes:
+  - title: "No dedicated IT staff"
+    description: >
+      We act as your infrastructure team, making architecture decisions, building systems, documenting everything,
+      and staying available afterward.
+  - title: "Alongside your internal IT department"
+    description: >
+      Your team handles daily operations while we deliver a specialized project — a Proxmox migration, a
+      monitoring build, a network audit — and hand it over documented so your staff owns it.
+engagementSteps:
+  - step: "01"
+    title: "Scoping conversation"
+    description: >
+      We establish what the problem actually is, what the deliverable ought to be, what constraints exist around
+      budget or calendar, and whether we are the right fit — before any work is committed.
+  - step: "02"
+    title: "Fixed-scope build and documentation"
+    description: >
+      We design, build, test, and document the system around your operational windows. Everything we build is
+      handed over documented so you are never dependent on anyone's memory.
+  - step: "03"
+    title: "Clean handoff or ongoing advisory"
+    description: >
+      Your team owns what we built from day one. Ongoing advisory and monitoring support is available once we
+      have completed a first project together and know your environment properly.
+nonProfitRealities:
+  - title: "Budgets are fixed in advance, and often restricted"
+    detail: >
+      Money approved for one purpose frequently cannot be moved to another, and a recurring subscription is a
+      considerably harder approval than a one-time purchase. We scope to that reality and are direct about total
+      cost of ownership before you commit rather than after.
+  - title: "License costs compound against a budget that does not grow"
+    detail: >
+      Proxmox, Ceph, Grafana, and Prometheus carry no per-VM, per-socket, or per-seat licensing anywhere in the
+      stack. Our private cloud write-up prices a real three-node cluster at roughly $4,950 against what equivalent
+      compute costs annually in the cloud, turning a recurring line item into a one-time capital purchase.
+  - title: "The calendar is not negotiable"
+    detail: >
+      Schools have genuine maintenance windows — summer, breaks, after hours — and everything outside them is
+      production with students in the building. We plan cutovers around the academic calendar rather than asking
+      you to accept downtime during instruction.
+  - title: "The IT department is often one person"
+    detail: >
+      Documentation is not something we tack on at the end; it is most of the point. Everything we build is
+      handed over documented, so that neither your staff nor whoever eventually replaces them is dependent on
+      our memory.
+  - title: "Student and donor data carries obligations"
+    detail: >
+      Student records, donor information, and payment data each come with their own handling requirements, and we
+      build segmentation, access control, backup, and retention with those in mind. Where something falls outside
+      our lane and needs counsel or a specialist, we say so plainly.
+  - title: "Funding compliance is infrastructure work"
+    detail: >
+      For schools, E-Rate and CIPA are not paperwork happening somewhere adjacent to the network. The filtering,
+      the documentation, and the equipment bought with Category Two money are the same systems we are already
+      building and auditing.
+  - title: "You have to be able to show your work"
+    detail: >
+      Boards, auditors, and funders all ask for evidence, and the documentation and monitoring we build produce
+      that record as a matter of course, so answering never turns into a scramble.
+contactChecklist:
+  - title: "Your environment"
+    description: >
+      Roughly how many users and sites, and what you run today, whether that is on-premises hardware, AWS, or some
+      combination of the two. Anything unusual is worth mentioning.
+  - title: "The problem"
+    description: >
+      Whatever is broken, too expensive, or undocumented, or alternatively what you are trying to build.
+  - title: "Timeline and any hard dates"
+    description: >
+      A lease expiring, a license renewal, an audit, a move, or an academic-calendar maintenance window.
+  - title: "Who else is involved"
+    description: >
+      Whether you have internal IT staff, and who makes the decision.
+  - title: "Budget, if you have one"
+    description: >
+      Non-profits and schools especially. Tell us the figure that has already been approved, or the funding cycle
+      you are working toward, since we would much rather scope to what exists than quote something you cannot act on.
+technologies:
+  - category: "Virtualization and storage"
+    items:
+      - "Proxmox VE"
+      - "VMware vSphere / ESXi"
+      - "Hyper-V"
+      - "Ceph"
+      - "Proxmox Backup Server"
+      - "Veeam"
+      - "Unraid"
+  - category: "Cloud and infrastructure as code"
+    items:
+      - "Amazon Web Services (AWS)"
+      - "DigitalOcean"
+      - "Pulumi"
+      - "Terraform"
+  - category: "Containers, automation and CI/CD"
+    items:
+      - "Docker"
+      - "Kubernetes"
+      - "GitHub Actions"
+      - "Python"
+      - "PowerShell"
+      - "Bash"
+  - category: "Monitoring and observability"
+    items:
+      - "Grafana"
+      - "Prometheus"
+      - "InfluxDB"
+      - "Telegraf"
+  - category: "Networking"
+    items:
+      - "VLAN design and segmentation"
+      - "Multicast and inter-VLAN routing"
+      - "Managed switching across vendors"
+      - "Ubiquiti UniFi"
+      - "Firewall configuration"
+      - "Structured network documentation"
+  - category: "Servers, endpoints and local AI"
+    items:
+      - "Windows Server & Active Directory"
+      - "MSSQL & reporting services"
+      - "SMB file services"
+      - "Linux server administration"
+      - "Desktop imaging"
+      - "Ollama & local NVIDIA GPU inference"
+knowsAbout:
+  - "IT infrastructure consulting"
+  - "Network auditing and documentation"
+  - "Proxmox VE"
+  - "Ceph distributed storage"
+  - "VMware to Proxmox migration"
+  - "Virtualization"
+  - "Infrastructure monitoring"
+  - "Grafana"
+  - "Prometheus"
+  - "InfluxDB"
+  - "Telegraf"
+  - "Amazon Web Services"
+  - "AWS cost optimization"
+  - "AWS architecture review"
+  - "DigitalOcean"
+  - "Infrastructure as code"
+  - "Pulumi"
+  - "Terraform"
+  - "Kubernetes"
+  - "Docker"
+  - "GitHub Actions"
+  - "CI/CD"
+  - "Ubiquiti UniFi"
+  - "Windows Server"
+  - "Active Directory"
+  - "Desktop imaging"
+  - "Data analysis and visualization"
+  - "Ransomware recovery"
+  - "IT asset inventory"
+  - "Business process automation"
+  - "API development"
+  - "API integration"
+  - "Local LLM deployment"
+  - "Ollama"
+  - "Self-hosted AI"
+  - "NVIDIA GPU"
+  - "Content filter log analysis"
+  - "CIPA monitoring evidence"
+  - "Student data privacy"
+  - "Non-profit IT consulting"
+  - "K-12 school IT infrastructure"
+  - "Charter school IT support"
+  - "Open source infrastructure for non-profits"
+  - "1:1 device programs"
+  - "E-Rate"
+  - "E-Rate Category One"
+  - "E-Rate Category Two"
+  - "E-Rate filing and compliance"
+  - "CIPA compliance"
+  - "Children's Internet Protection Act"
+  - "Content filtering"
+  - "Internet safety policy"
+aiCrawlers:
+  - "GPTBot"
+  - "OAI-SearchBot"
+  - "ChatGPT-User"
+  - "ClaudeBot"
+  - "Claude-User"
+  - "Claude-SearchBot"
+  - "anthropic-ai"
+  - "PerplexityBot"
+  - "Perplexity-User"
+  - "Google-Extended"
+  - "Applebot"
+  - "Applebot-Extended"
+  - "Bingbot"
+  - "meta-externalagent"
+  - "Amazonbot"
+  - "Bytespider"
+  - "DuckAssistBot"
+  - "cohere-ai"
+  - "YouBot"
+  - "Diffbot"
+  - "Timpibot"
+  - "Omgilibot"

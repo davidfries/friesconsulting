@@ -1,2 +1,9 @@
-hugo.exe
-/public
+node_modules/
+/dist
+/.ssr-dist
+/src/generated
+.env
+.env.*
+!.env.example
+.DS_Store
+*.local

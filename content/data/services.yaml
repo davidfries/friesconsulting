@@ -1,0 +1,313 @@
+- id: "network-audit-and-documentation"
+  name: "Network Audit, Documentation and Security Review"
+  shortName: "Network Audits & Documentation"
+  category: "Network & Compliance"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/posts/network-audit/"
+  relatedPost: "network-audit"
+  summary: "Full internal network audit covering every device, how it connects, VLAN assignment, access, and configuration drift. The client keeps the documentation. Automated change reporting is included, as is network security auditing and Ubiquiti UniFi configuration."
+  tags:
+    - "Network audit"
+    - "VLANs"
+    - "UniFi"
+    - "Change reporting"
+  details: |
+    A network audit produces a complete picture of your network: every device on it, how those devices connect, which VLANs they sit on, what access each one has, and where switch and firewall configuration has quietly drifted from intent. The documentation that comes out of it is yours to keep. Automated reporting comes with it too, so that new devices surface as they appear rather than accumulating unnoticed.
+
+    This is the right starting point when nobody can confidently answer "what is on our network," when documentation was never written in the first place, or when a recurring problem has resisted every attempt at diagnosis.
+
+    Schools get more out of it still, ending up with a defensible picture of the 1:1 device fleet, of how student and guest traffic is separated, of what slips past the content filter, and of where the [E-Rate Category Two](#e-rate-funding-and-cipa-compliance) equipment actually ended up.
+
+    Our [network audit write-up](/posts/network-audit/) describes one such engagement in detail, including how the documentation we gathered went on to solve an unrelated VLAN and multicast failure days later.
+
+- id: "e-rate-funding-and-cipa-compliance"
+  name: "E-Rate Funding Support and CIPA Compliance"
+  shortName: "E-Rate & CIPA Compliance"
+  category: "Network & Compliance"
+  audiences:
+    - "schools"
+    - "non-profits"
+  primaryUrl: "/services/#e-rate-funding-and-cipa-compliance"
+  relatedPost: "local-llm"
+  summary: "E-Rate support for schools and libraries. Spending: Category One and Category Two planning against the eligible services list and per-student budgets. Filing: competitive bidding, the application cycle, technical documentation for PIA review. CIPA compliance is covered too, from content filtering that meets the technology protection measure requirement to the internet safety policy, monitoring, and certification that keep funding intact."
+  tags:
+    - "E-Rate Cat 1 & 2"
+    - "PIA review"
+    - "CIPA"
+    - "Content filtering"
+  details: |
+    We have worked both sides of E-Rate: planning what to spend it on, and filing to get it in the first place.
+
+    **Spending.** Category Two covers internal connections — switching, wireless access points, cabling, and the rest of the equipment that moves traffic inside your buildings — against a per-student budget spread over a five-year cycle. Getting real value out of that means reading the eligible services list before you design the network rather than after, and sequencing purchases so that none of the budget is left stranded at the end.
+
+    Category One covers the broadband circuit itself, where the questions are contract term, bandwidth sizing, and whether what you are being sold actually matches what you need.
+
+    **Filing.** The application cycle is procedural and unforgiving from competitive bidding through to certification, and the deadlines do not move for anyone. We produce the technical documentation the process demands: service descriptions precise enough to bid against, equipment lists mapped to eligible categories, and the supporting detail PIA review asks for.
+
+    **CIPA compliance.** E-Rate discounts are conditional on CIPA, and we have both implemented it and enforced it. In practice that means a technology protection measure that blocks what the statute actually requires, an internet safety policy that matches what the filter does day to day, monitoring of minors' online activity, and a documentation trail standing behind the certification you sign.
+
+    One failure mode turns up more than any other: a filter configured years ago, never reviewed since, and no longer matching either the written policy or the current threat picture. That is a funding risk as much as a safety one.
+
+    This work pairs naturally with a [network audit](#network-audit-and-documentation), since the device and topology documentation an audit produces is most of what a Category Two request needs anyway. For monitoring evidence at 1:1 scale, see our [local LLM filter log pipeline write-up](/posts/local-llm/).
+
+- id: "private-cloud-design-and-build"
+  name: "Private Cloud Design and Build"
+  shortName: "Private Cloud (Proxmox & Ceph)"
+  category: "Virtualization & Cloud"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/posts/privatecloud/"
+  relatedPost: "privatecloud"
+  summary: "Proxmox VE clusters with Ceph distributed storage, sized to the client's workloads. Provides clustering, live migration, VM high availability, and storage that survives a node failure, all on hardware the client owns."
+  tags:
+    - "Proxmox VE"
+    - "Ceph"
+    - "High availability"
+    - "CapEx vs OpEx"
+  details: |
+    We design and build private clouds on Proxmox VE backed by Ceph distributed storage, which gets you clustering, live migration, VM-level high availability, and storage that survives the loss of a node — all of it running on hardware you own, with no per-VM hourly billing attached.
+
+    We size the cluster against the workloads you actually run, specify the hardware and networking, build it, and hand the whole thing over documented.
+
+    For non-profits and schools this is frequently the highest-leverage project on the table, because it converts a licensing and hosting bill that grows every year into a capital purchase made once. Our [private cloud write-up](/posts/privatecloud/) works through a real three-node example with itemized costs (~$4,950 hardware), set against what the equivalent compute (~$5,600/year) would cost in AWS, or run your own numbers in the [Private Cloud TCO Estimator](/calculator/).
+
+- id: "vmware-to-proxmox-migration"
+  name: "VMware to Proxmox Migration"
+  shortName: "VMware to Proxmox Migration"
+  category: "Virtualization & Cloud"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/posts/proxmox/"
+  relatedPost: "proxmox"
+  summary: "Migration off Broadcom-era VMware licensing to Proxmox VE. Covers cluster design, VM migration, backend storage, and backup strategy using Proxmox Backup Server or Veeam."
+  tags:
+    - "Proxmox VE"
+    - "VMware exit"
+    - "Proxmox Backup Server"
+    - "Veeam"
+  details: |
+    Broadcom's acquisition of VMware repriced virtualization out of reach for a great many smaller organizations. Proxmox VE is a credible destination: KVM-based, open source, immediately recognizable to anyone who has run vSphere, and far less restrictive about what hardware it will tolerate.
+
+    We handle cluster design, VM migration, backend storage, and backup strategy using Proxmox Backup Server or Veeam. Our [Proxmox write-up](/posts/proxmox/) sets out our position on the migration generally, and on the backup question in particular.
+
+- id: "server-architecture-installation-and-configuration"
+  name: "Server Architecture, Installation and Configuration"
+  shortName: "Server Architecture & Imaging"
+  category: "Virtualization & Cloud"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/services/#server-architecture-installation-and-configuration"
+  summary: "Specification, installation and configuration of physical and virtual servers. Windows Server, Active Directory, MSSQL, SMB file services, Linux. Desktop imaging and hardware purchase recommendations are included."
+  tags:
+    - "Windows Server"
+    - "Active Directory"
+    - "Linux"
+    - "Desktop imaging"
+  details: |
+    We specify, install, and configure the servers you run on, physical or virtual: Windows Server and Active Directory, MSSQL and reporting services, SMB file services, and Linux servers.
+
+    Hardware purchase recommendations come with that, sized against what you actually need rather than what a vendor quote suggests, as does desktop imaging so that workstation builds are repeatable instead of hand-assembled one at a time.
+
+- id: "infrastructure-monitoring-and-alerting"
+  name: "Infrastructure Monitoring and Alerting"
+  shortName: "Monitoring & Alerting"
+  category: "Observability & Operations"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/posts/monitoring/"
+  relatedPost: "monitoring"
+  summary: "Monitoring and alerting built on Grafana, InfluxDB, Prometheus, and Telegraf. Percentage-based thresholds and maintenance-window suppression mean alerts fire only when action is required."
+  tags:
+    - "Grafana"
+    - "Prometheus"
+    - "InfluxDB"
+    - "Telegraf"
+  details: |
+    We build monitoring on Grafana, InfluxDB, Prometheus, and Telegraf, designed around a single principle we call alerting with purpose: an alert should fire only when somebody actually needs to act on it.
+
+    In practice that means percentage-based thresholds rather than absolute ones, suppression during backups and patch windows, and metrics chosen because they predict problems rather than because they happened to be easy to graph.
+
+    Monitoring is also a record. When your ISP's support desk asks for evidence, historical latency and throughput data is the difference between a ticket and an argument. See our [monitoring write-up](/posts/monitoring/).
+
+- id: "aws-architecture-and-cost-optimization"
+  name: "AWS Architecture and Cost Optimization"
+  shortName: "AWS Architecture & Cost Control"
+  category: "Virtualization & Cloud"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/posts/awsiac/"
+  relatedPost: "awsiac"
+  summary: "Architecture review, right-sizing, spend analysis and security configuration review for AWS environments, with tagging and attribution put in place so that spend can be traced to something. Includes an honest assessment of whether a hyperscaler is needed at all."
+  tags:
+    - "AWS"
+    - "Cost optimization"
+    - "Tagging"
+    - "DigitalOcean"
+  details: |
+    We work in AWS, and we will tell you plainly when AWS is more than you need. The work covers architecture review, right-sizing, spend analysis, and security configuration review — the questions that matter once an account has grown organically for a few years and nobody is quite sure what is running or why.
+
+    Cost is usually where this starts. Untagged resources cannot be attributed to anything, unattributed spend never gets cleaned up, and the bill grows for reasons nobody can reconstruct. For a fuller treatment see [Streamlining Your AWS Account](/posts/awsiac/), and for the question of whether you need a hyperscaler at all, [Do you really need a hyperscaler?](/posts/small-clouds/).
+
+- id: "infrastructure-as-code"
+  name: "Infrastructure as Code"
+  shortName: "Infrastructure as Code"
+  category: "Virtualization & Cloud"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/posts/awsiac/"
+  relatedPost: "awsiac"
+  summary: "Infrastructure defined in code with Pulumi and Terraform. Environments become version controlled, reviewable in a pull request, reproducible across regions and accounts, and recoverable after a mistake."
+  tags:
+    - "Pulumi"
+    - "Terraform"
+    - "Version control"
+    - "Reproducibility"
+  details: |
+    We implement infrastructure as code with Pulumi and Terraform, which puts your environment into version control and turns every change into a pull request somebody can review before it ships. The same definition reproduces the environment in a second region or a fresh account, and recovers it after a mistake.
+
+    That is the difference between a cloud account that merely accumulates and one you can reason about. See our [infrastructure as code write-up](/posts/awsiac/).
+
+- id: "kubernetes-and-cicd-pipelines"
+  name: "Kubernetes and CI/CD Pipelines"
+  shortName: "Kubernetes & CI/CD"
+  category: "Automation & Local AI"
+  audiences:
+    - "small-business"
+    - "non-profits"
+  primaryUrl: "/services/#kubernetes-and-cicd-pipelines"
+  relatedPost: "awsiac"
+  summary: "Kubernetes cluster setup and ongoing support, containerization with Docker, and GitHub Actions pipeline design so that builds, tests and deployments run without manual intervention."
+  tags:
+    - "Kubernetes"
+    - "Docker"
+    - "GitHub Actions"
+    - "CI/CD"
+  details: |
+    We set up and support Kubernetes clusters, containerize applications with Docker, and build GitHub Actions pipelines so that builds, tests, and deployments happen without anyone typing commands at the wrong moment.
+
+    This is really [infrastructure as code](/posts/awsiac/) applied to the deployment path: the process is defined, reviewable, and identical on every run.
+
+- id: "it-asset-inventory"
+  name: "IT Asset Inventory"
+  shortName: "IT Asset Inventory"
+  category: "Observability & Operations"
+  audiences:
+    - "schools"
+    - "non-profits"
+    - "small-business"
+  primaryUrl: "/posts/inventory/"
+  relatedPost: "inventory"
+  summary: "Current hardware and software inventory, tied to the users responsible for it. Automated reporting flags newly appeared devices and peripheral changes. Suits schools running 1:1 device programs."
+  tags:
+    - "1:1 devices"
+    - "Asset tracking"
+    - "Device alerts"
+  details: |
+    Asset inventory keeps a current record of hardware and software, tied to the people responsible for it, with automated reports flagging whatever changed.
+
+    Schools running 1:1 Chromebook or laptop programs get the most out of this: devices tie back to students, changes surface without anyone chasing them, and at inventory time you have a real answer rather than a spreadsheet nobody quite trusts.
+
+    It also answers the two questions that always arrive at the worst possible moment — what appeared on our network in the last 24 hours, and what is the authoritative list of authorized devices. See our [inventory write-up](/posts/inventory/).
+
+- id: "automation-and-custom-integration"
+  name: "Automation, API Development and Integration"
+  shortName: "Automation & API Integration"
+  category: "Automation & Local AI"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/posts/automation/"
+  relatedPost: "automation"
+  summary: "Scripting, custom API development and integration, scheduled reporting, document and data processing. Also UI automation for line-of-business software that exposes no API."
+  tags:
+    - "Python & PowerShell"
+    - "Custom APIs"
+    - "UI automation"
+    - "Scheduled reports"
+  details: |
+    We automate the repetitive work that quietly consumes staff hours: combining and processing documents, moving data between systems and spreadsheets, batch file operations, scheduled reporting, and API integrations between applications that were never designed to talk to one another.
+
+    We also automate software that offers no API at all. One recent engagement took on a reporting application with no scheduling or export capability whatsoever, which we ended up driving through its own interface — several hundred hours a year handed back to the client. See our [automation write-up](/posts/automation/).
+
+- id: "local-ai-and-log-analysis"
+  name: "Local AI and Log Analysis"
+  shortName: "Local AI & Filter Log Analysis"
+  category: "Automation & Local AI"
+  audiences:
+    - "schools"
+    - "non-profits"
+    - "small-business"
+  primaryUrl: "/posts/local-llm/"
+  relatedPost: "local-llm"
+  summary: "Self-hosted large language models running on Ollama with a single NVIDIA GPU, on hardware the client owns, so that sensitive data is never sent to a third party. The primary application is content filter log analysis for schools: categorizing filter traffic to separate miscategorizations from bypass attempts, policy concerns and welfare signals, evidencing the CIPA monitoring requirement, and feeding a role-based Grafana dashboard for staff."
+  tags:
+    - "Ollama"
+    - "NVIDIA GPU"
+    - "Student data privacy"
+    - "CIPA monitoring"
+  details: |
+    We deploy self-hosted language models running on Ollama with a single consumer NVIDIA GPU, on hardware you own, so sensitive data never leaves your building. There is no per-token API bill and no third-party vendor data-handling agreement to defend.
+
+    The primary production application is content filter log analysis for schools running 1:1 device programs. A rule engine and cache resolve ~99% of URLs before the model ever runs, leaving only genuinely novel URLs for local LLM classification. That keeps a single 16 GB consumer RTX card well ahead of roughly 250,000 weekly events across ~500 students.
+
+    Output feeds two role-based Grafana views: an engineering health dashboard, and an aggregate staff dashboard in plain language that separates filter miscategorizations from proxy/VPN bypass attempts, policy-relevant patterns, and welfare signals routed to a designated counselor or administrator. See our [local LLM filter log write-up](/posts/local-llm/) for production charts, throughput figures, and design boundaries.
+
+- id: "data-analysis-and-visualization"
+  name: "Data Analysis and Visualization"
+  shortName: "Data Analysis & Visualization"
+  category: "Observability & Operations"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/services/#data-analysis-and-visualization"
+  relatedPost: "local-llm"
+  summary: "Operational and business data turned into dashboards and scheduled reports. Each one answers a specific question rather than producing charts nobody opens."
+  tags:
+    - "Dashboards"
+    - "Scheduled reports"
+    - "Grafana"
+    - "MSSQL"
+  details: |
+    Most organizations already collect the data that would answer their operational questions; what they lack is any practical way to look at it. We build dashboards and scheduled reports against your existing systems, each one aimed at a specific question somebody actually needs answered, rather than producing charts nobody opens twice.
+
+- id: "ransomware-recovery-operations"
+  name: "Ransomware Recovery Operations"
+  shortName: "Ransomware Recovery & Backups"
+  category: "Network & Compliance"
+  audiences:
+    - "non-profits"
+    - "schools"
+    - "small-business"
+  primaryUrl: "/services/#ransomware-recovery-operations"
+  relatedPost: "monitoring"
+  summary: "Incident recovery after a ransomware event. Scoping the blast radius, restoring from backup, rebuilding compromised infrastructure, closing the gaps that allowed it. Backup and recovery design follows, to prevent a repeat."
+  tags:
+    - "Incident recovery"
+    - "Immutable backups"
+    - "Blast radius"
+    - "Hardening"
+  details: |
+    If you are dealing with an active ransomware incident, reach us through the [contact form](/contact/) and mark it urgent. We monitor it and will respond quickly.
+
+    Schools, districts, and non-profits are targeted disproportionately, because attackers know that valuable records and a one-person IT department tend to go together. If that describes you, do the backup and recovery design work described below before you need it rather than after.
+
+    Recovery work begins with scoping the blast radius and establishing what is genuinely clean, then moves through restoring from backup, rebuilding compromised infrastructure, and closing the gaps that allowed the intrusion in the first place.
+
+    Afterward we design the strategy that makes a second event survivable: offline or immutable copies, restores that have actually been tested, and [monitoring](/posts/monitoring/) tuned to catch the early signals rather than the aftermath.
